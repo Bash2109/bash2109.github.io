@@ -1,0 +1,80 @@
+{
+  "respondents": 63,
+  "valid_closed_responses": 62,
+  "questions": [
+    {
+      "title": "Использование одного пароля в нескольких сервисах",
+      "data": [
+        {"label": "Да", "value": 27.4, "count": 17},
+        {"label": "Иногда", "value": 29.0, "count": 18},
+        {"label": "Несколько похожих", "value": 16.1, "count": 10},
+        {"label": "Нет", "value": 27.4, "count": 17}
+      ]
+    },
+    {
+      "title": "Использование двухфакторной аутентификации",
+      "data": [
+        {"label": "Да", "value": 80.6, "count": 50},
+        {"label": "Нет", "value": 9.7, "count": 6},
+        {"label": "Не знаю, что это", "value": 9.7, "count": 6}
+      ]
+    },
+    {
+      "title": "Проверка адресной строки браузера",
+      "data": [
+        {"label": "Да", "value": 72.6, "count": 45},
+        {"label": "Иногда", "value": 16.1, "count": 10},
+        {"label": "Нет", "value": 11.3, "count": 7}
+      ]
+    },
+    {
+      "title": "Менеджер паролей",
+      "data": [
+        {"label": "Да", "value": 74.2, "count": 46},
+        {"label": "Нет", "value": 24.2, "count": 15},
+        {"label": "Не знаю, что это", "value": 1.6, "count": 1}
+      ]
+    },
+    {
+      "title": "Использование публичного Wi-Fi",
+      "data": [
+        {"label": "Да", "value": 29.0, "count": 18},
+        {"label": "Редко", "value": 43.5, "count": 27},
+        {"label": "Нет", "value": 27.4, "count": 17}
+      ]
+    },
+    {
+      "title": "Обновление системы и приложений",
+      "data": [
+        {"label": "Регулярно", "value": 66.1, "count": 41},
+        {"label": "Редко", "value": 30.6, "count": 19},
+        {"label": "Нет", "value": 3.2, "count": 2}
+      ]
+    },
+    {
+      "title": "Резервное копирование",
+      "data": [
+        {"label": "Да", "value": 61.3, "count": 38},
+        {"label": "Нет", "value": 38.7, "count": 24}
+      ]
+    }
+  ],
+  "open_question_1": {
+    "valid_responses": 48,
+    "cautious_behavior": 40,
+    "cautious_behavior_percent": 83.3,
+    "risky_behavior": 8,
+    "risky_behavior_percent": 16.7
+  },
+  "open_question_2": {
+    "valid_responses": 34,
+    "themes": [
+      {"label": "Пароли и их защита", "count": 17, "percent": 50.0},
+      {"label": "Ссылки, сайты и файлы", "count": 17, "percent": 50.0},
+      {"label": "Личные данные и приватность", "count": 8, "percent": 23.5},
+      {"label": "Двухфакторная аутентификация", "count": 5, "percent": 14.7},
+      {"label": "Обновление ПО и антивирус", "count": 2, "percent": 5.9},
+      {"label": "Безопасные источники загрузки", "count": 2, "percent": 5.9}
+    ]
+  }
+}
