@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0d33">
+  <title>Кибербезопасность для обычных пользователей</title>
+  <meta name="description" content="Простые правила цифровой безопасности, проверка пароля и викторина для закрепления знаний.">
+  <script>document.documentElement.className += " js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Фон: медленно плывущие цветные пятна и тонкая сетка -->
+  <div class="bg" aria-hidden="true">
+    <i class="blob b1"></i>
+    <i class="blob b2"></i>
+    <i class="blob b3"></i>
+    <i class="grid"></i>
+  </div>
+
+  <header class="site-header">
+    <div class="bar glass">
+      <a href="#top" class="logo" aria-label="Кибербезопасность, на главную">
+        <svg class="logo-mark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M12 2.5 4.5 5.4v5.7c0 4.6 3.1 8.3 7.5 10.4 4.4-2.1 7.5-5.8 7.5-10.4V5.4L12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="m8.7 12.2 2.3 2.3 4.3-4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">Кибербезопасность</span>
+      </a>
+      <nav class="nav" aria-label="Разделы сайта">
+        <a href="#rules">Правила</a>
+        <a href="#checker">Пароль</a>
+        <a href="#quiz">Викторина</a>
+        <a href="#results">Опрос</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ГЛАВНАЯ -->
+    <section class="hero">
+      <div class="container">
+        <h1>Кибербезопасность для обычных пользователей</h1>
+        <p class="lead">Короткие и понятные правила, которые защитят ваши аккаунты, деньги и личные данные. Прочитайте, проверьте свой пароль и пройдите викторину.</p>
+        <div class="hero-buttons">
+          <a href="#rules" class="btn btn-primary">Читать правила</a>
+          <a href="#quiz" class="btn btn-secondary">Пройти викторину</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРАВИЛА -->
+    <section id="rules" class="section">
+      <div class="container">
+        <h2>Основные правила</h2>
+        <p class="section-sub">Нажмите на тему, чтобы раскрыть её. В каждой: как делают неправильно, как правильно и почему это важно.</p>
+
+        <div class="accordion">
+
+          <details class="topic glass">
+            <summary><span class="ico">🔑</span> Пароли</summary>
+            <div class="topic-body">
+              <div class="trio">
+                <div class="bad"><h4>Как делают неправильно</h4><p>Один пароль на все сайты, дата рождения, имя, «qwerty123». Короткие пароли из 6–8 символов.</p></div>
+                <div class="good"><h4>Как правильно</h4><p>Уникальный пароль для каждого сервиса. Длинная фраза из нескольких слов (от 12–16 символов) запоминается легче и надёжнее короткого набора символов. Для хранения паролей удобно использовать менеджер паролей.</p></div>
+                <div class="why"><h4>Почему это важно</h4><p>Когда на одном сайте происходит утечка, злоумышленники пробуют те же логин и пароль на других сервисах. Один повторяющийся пароль открывает сразу все аккаунты.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="topic glass">
+            <summary><span class="ico">📲</span> Двухфакторная аутентификация</summary>
+            <div class="topic-body">
+              <div class="trio">
+                <div class="bad"><h4>Как делают неправильно</h4><p>Не включают её вовсе или не знают, что это такое. Сообщают коды из СМС посторонним.</p></div>
+                <div class="good"><h4>Как правильно</h4><p>Включить подтверждение входа в почте, соцсетях, мессенджерах и на госуслугах. Лучше использовать приложение-аутентификатор, чем СМС. Никому и никогда не называть одноразовые коды.</p></div>
+                <div class="why"><h4>Почему это важно</h4><p>Даже если пароль украли, без второго шага войти в аккаунт не получится.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="topic glass">
+            <summary><span class="ico">🎣</span> Фишинг (поддельные письма и сайты)</summary>
+            <div class="topic-body">
+              <div class="trio">
+                <div class="bad"><h4>Как делают неправильно</h4><p>Переходят по ссылкам из писем и сообщений, не глядя на адрес. Вводят данные на сайте, который просто «выглядит как настоящий».</p></div>
+                <div class="good"><h4>Как правильно</h4><p>Смотреть на адресную строку: домен должен быть точным (например, не «sberbank-lk.ru»). Признаки обмана: срочность, угрозы блокировки, обещание выигрыша, ошибки в тексте. Нужный сайт лучше открывать вручную или из закладок.</p></div>
+                <div class="why"><h4>Почему это важно</h4><p>Поддельный сайт копирует внешний вид настоящего, чтобы вы сами отдали логин, пароль или данные карты.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="topic glass">
+            <summary><span class="ico">📞</span> Телефонное мошенничество</summary>
+            <div class="topic-body">
+              <div class="trio">
+                <div class="bad"><h4>Как делают неправильно</h4><p>Продолжают разговор с «сотрудником банка» или «следователем», сообщают коды, данные карты, ставят программы «для защиты».</p></div>
+                <div class="good"><h4>Как правильно</h4><p>Положить трубку и самостоятельно перезвонить по номеру на обратной стороне карты или на официальном сайте. Банк никогда не просит коды из СМС и CVC. Не устанавливать приложения по просьбе звонящего.</p></div>
+                <div class="why"><h4>Почему это важно</h4><p>Мошенники давят на страх и спешку, чтобы человек не успел подумать. Пауза и перезвон по официальному номеру ломают всю схему.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="topic glass">
+            <summary><span class="ico">📶</span> Wi-Fi: домашний и публичный</summary>
+            <div class="topic-body">
+              <div class="trio">
+                <div class="bad"><h4>Как делают неправильно</h4><p>Оставляют заводской пароль роутера и простой пароль сети из цифр. В кафе заходят в онлайн-банк через открытую сеть.</p></div>
+                <div class="good"><h4>Как правильно</h4><p>Сменить пароль администратора роутера и пароль Wi-Fi на длинный, использовать шифрование WPA2 или WPA3. В публичных сетях не вводить пароли и данные карт, лучше воспользоваться мобильным интернетом.</p></div>
+                <div class="why"><h4>Почему это важно</h4><p>Слабая домашняя сеть позволяет посторонним подключиться к ней, а в открытых сетях трафик легче перехватить или подменить.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="topic glass">
+            <summary><span class="ico">🔄</span> Обновления и резервные копии</summary>
+            <div class="topic-body">
+              <div class="trio">
+                <div class="bad"><h4>Как делают неправильно</h4><p>Годами откладывают обновления. Хранят единственную копию важных файлов на одном устройстве.</p></div>
+                <div class="good"><h4>Как правильно</h4><p>Включить автоматическое обновление системы и приложений. Важные файлы хранить минимум в двух местах: например, на компьютере и в облаке или на внешнем диске.</p></div>
+                <div class="why"><h4>Почему это важно</h4><p>Обновления закрывают найденные уязвимости, а резервная копия спасает данные при вирусе-шифровальщике, поломке или потере устройства.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="topic glass">
+            <summary><span class="ico">💬</span> Соцсети и мессенджеры</summary>
+            <div class="topic-body">
+              <div class="trio">
+                <div class="bad"><h4>Как делают неправильно</h4><p>Переходят по ссылке от друга вроде «проголосуй за меня», публикуют фото билетов, документов и геолокацию в реальном времени.</p></div>
+                <div class="good"><h4>Как правильно</h4><p>Если знакомый внезапно просит ссылку, деньги или код, связаться с ним другим способом (звонком). Настроить приватность профиля и не выкладывать документы и данные карт.</p></div>
+                <div class="why"><h4>Почему это важно</h4><p>Взломанные аккаунты друзей — частый способ рассылки мошеннических ссылок. Личные данные из открытого профиля помогают обманщикам звучать убедительно.</p></div>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОВЕРКА ПАРОЛЯ -->
+    <section id="checker" class="section">
+      <div class="container narrow">
+        <h2>Проверка надёжности пароля</h2>
+        <p class="section-sub">Введите пароль, чтобы получить оценку. Проверка выполняется только в вашем браузере: введённый текст никуда не отправляется и не сохраняется.</p>
+        <p class="notice">Совет: для проверки лучше вводить пример похожего пароля, а не тот, который вы реально используете.</p>
+
+        <div class="checker glass">
+          <label for="pw-input">Пароль</label>
+          <div class="pw-row">
+            <input id="pw-input" type="password" autocomplete="off" spellcheck="false" placeholder="Введите пароль для проверки">
+            <button id="pw-toggle" class="btn btn-secondary btn-small" type="button">Показать</button>
+          </div>
+          <div class="meter"><div id="pw-bar" class="meter-bar"></div></div>
+          <p id="pw-level" class="pw-level" aria-live="polite">Введите пароль, чтобы увидеть оценку</p>
+          <ul id="pw-tips" class="pw-tips"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ВИКТОРИНА -->
+    <section id="quiz" class="section">
+      <div class="container narrow">
+        <h2>Викторина</h2>
+        <p class="section-sub">10 вопросов по материалу сайта. После каждого ответа вы увидите пояснение.</p>
+        <noscript><p class="notice">Для викторины и проверки пароля нужен включённый JavaScript.</p></noscript>
+        <div id="quiz-box" class="quiz-box glass"></div>
+      </div>
+    </section>
+
+    <!-- РЕЗУЛЬТАТЫ ОПРОСА -->
+    <section id="results" class="section">
+      <div class="container narrow">
+        <h2>Результаты опроса</h2>
+        <p class="section-sub">Мы провели опрос о том, насколько люди знают и соблюдают правила информационной безопасности.</p>
+        <div id="results-box"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Проект «Кибербезопасность для обычных пользователей», 2026 год</p>
+      <p class="small">Автор: Имя Фамилия, класс или группа</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
